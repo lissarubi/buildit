@@ -66,6 +66,7 @@ func main() {
         fmt.Println(command + " " + file)
         output := execute(command + " " + file + args)
         fmt.Println(output)
+        os.Exit(0)
       }else{
         fmt.Println("What command do you want to use? \n")
         for i := 0; i < len(builditYAML[lang]); i++{
@@ -80,8 +81,10 @@ func main() {
         fmt.Println(command + " " + file + args)
         output := execute(command + " " + file + args)
         fmt.Println(output)
+        os.Exit(0)
       }
     }
   }
+  fmt.Println("ERROR: This file doesn't is defined in ~/.buildit.yaml")
 
 }
