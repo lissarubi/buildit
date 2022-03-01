@@ -22,22 +22,6 @@ To install BuildIt use:
 
 `go get -u github.com/edersonferreira/buildit`
 
-## AUR
-
-BuildIt can be installed using AUR, with the package `buildit-edersonferreira-git`, like:
-
-### Yay
-
-```
-yay -S buildit-edersonferreira-git
-```
-
-### Paru
-
-```
-paru buildit-edersonferreira-git
-```
-
 # Configuration
 
 create a file `~/.buildit.yaml`, with the languages and compiler/runner commands, like this:
